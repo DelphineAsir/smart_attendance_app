@@ -16,9 +16,9 @@ log_name = 'logs:db'
 
 #r = redis.Redis.from_url(url="redis://:UK3uSEHS5lEsrbtf014zVwLDPD6Ds9In@redis-11588.c326.us-east-1-3.ec2.cloud.redislabs.com:11588")
 # Connect to Redis Client
-hostname = 'redis-11588.c326.us-east-1-3.ec2.cloud.redislabs.com'
-portnumber = 11588
-password = 'UK3uSEHS5lEsrbtf014zVwLDPD6Ds9In'
+hostname = 'redis-17629.c270.us-east-1-3.ec2.cloud.redislabs.com'
+port = 17629
+password = 'esLogs7keVlsi213Hdwri9AJniVYFahL'
 
 r = redis.StrictRedis(host=hostname,
                       port=portnumber,
