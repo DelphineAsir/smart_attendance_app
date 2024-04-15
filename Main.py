@@ -41,7 +41,7 @@ with tab1:
 
         return av.VideoFrame.from_ndarray(image_predicted, format="bgr24")
 
-    webrtc_streamer(key="Prediction", video_frame_callback=video_frame_callback
+    webrtc_streamer(key="Prediction", video_frame_callback=video_frame_callback,
                     rtc_configuration={
         "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
     })
