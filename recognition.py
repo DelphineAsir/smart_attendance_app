@@ -21,7 +21,7 @@ port = 17629
 password = 'esLogs7keVlsi213Hdwri9AJniVYFahL'
 
 r = redis.StrictRedis(host=hostname,
-                      port=portnumber,
+                      port=port,
                       password=password)
 
 # Retrieve Data from database
