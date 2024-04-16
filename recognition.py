@@ -190,7 +190,12 @@ class NewRegistration:
         r.hset(name=db_name ,key=key,value=x_mean_bytes)
         
         # remove old file
-        os.remove('embedding.txt')
+        #os.remove('embedding.txt')
+        try:
+          os.system('rm embedding.txt')
+          print("File deleted successfully")
+        except Exception as e:
+          print(f"Error deleting file: {e}")
         self.reset()
         
         return True
