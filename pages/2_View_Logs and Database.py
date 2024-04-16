@@ -1,7 +1,6 @@
 import streamlit as st 
 from Main import recognition
 
-st.set_page_config(page_title='Reporting',layout='wide')
 st.subheader('View Logs and Database ')
 
 tab1, tab2 = st.tabs(['Registered Data','Logs'])
