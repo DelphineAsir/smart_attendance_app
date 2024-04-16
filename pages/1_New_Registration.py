@@ -25,11 +25,13 @@ def video_callback_func(frame):
             np.savetxt(f,embedding)
     
     return av.VideoFrame.from_ndarray(reg_img,format='bgr24')
-
-webrtc_streamer(key='registration',video_frame_callback=video_callback_func,
-                rtc_configuration={
+  
+webrtc_streamer(key="registration", video_frame_callback=video_callback_func,
+rtc_configuration={
         "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
-    })
+    }
+)
+
 
 
 # save the data in redis database
